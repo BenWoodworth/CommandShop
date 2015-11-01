@@ -1,0 +1,14 @@
+# 
+# 
+
+shopsPerPageInChat: 16
+startingBalance: 100.0
+currencyItem: 
+  item: gold_nugget
+  data: 0
+  dataTag: '{}'
+disabledShopItems:
+- air
+- gold_nugget
+- gold_ingot
+- gold_block
