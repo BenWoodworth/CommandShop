@@ -19,6 +19,11 @@ import org.bukkit.inventory.meta.SkullMeta;
 import co.kepler.commandshop.Shop.ShopEntry;
 import net.md_5.bungee.api.ChatColor;
 
+/**
+ * @author Ben Woodworth
+ *
+ * An inventory GUI that pops up showing details about a single shop
+ */
 public class ShopView implements Listener {
 	private static final String TITLE = ChatColor.DARK_GREEN + "View Shop Item";
 

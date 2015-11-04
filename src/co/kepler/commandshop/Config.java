@@ -9,6 +9,11 @@ import org.bukkit.UnsafeValues;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * @author Ben Woodworth
+ *
+ * Class to get values from the plugin configuration
+ */
 @SuppressWarnings("deprecation")
 public class Config {
 	private FileConfiguration config;

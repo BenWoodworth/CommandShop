@@ -20,6 +20,15 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import net.md_5.bungee.api.ChatColor;
 
+/**
+ * @author Ben Woodworth
+ *
+ * Manages all of the server shops
+ * 
+ * Shop.ShopPlayer - A player's details (shops they own, money they have, etc.)
+ * Shop.ShopItem - An item being sold in a shop
+ * Shop.ShopEntry - A single shop
+ */
 public class Shop implements Listener {
 	private final HashMap<String, UUID> playerIDs; // <Name, UUID>
 	private final HashMap<UUID, ShopPlayer> players; // <UUID, ShopPlayer>

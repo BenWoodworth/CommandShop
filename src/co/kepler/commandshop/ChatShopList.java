@@ -11,8 +11,13 @@ import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 
+/**
+ * @author Ben Woodworth
+ *
+ * Show a list of shops in a player's chat.
+ */
 public class ChatShopList {
-
+	
 	public static void showList(Player player, List<ShopEntry> shops, int page,
 			String prevPageCommand, String nextPageCommand) {
 		if (shops.size() == 0) {

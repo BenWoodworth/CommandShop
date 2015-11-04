@@ -6,6 +6,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import co.kepler.commandshop.commands.CmdShop;
 
+/**
+ * @author Ben Woodworth
+ * 
+ * The main CommandShop class
+ */
 public class CommandShop extends JavaPlugin {
 	private static CommandShop commandShop;
 	

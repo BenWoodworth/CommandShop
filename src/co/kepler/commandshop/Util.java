@@ -6,6 +6,11 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
+/**
+ * @author Ben Woodworth
+ *
+ * A utility class with methods to make life easier
+ */
 public class Util {
 
 	public static boolean isInt(String s) {
