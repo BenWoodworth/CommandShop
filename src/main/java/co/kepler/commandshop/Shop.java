@@ -2,13 +2,7 @@ package co.kepler.commandshop;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
@@ -178,9 +172,7 @@ public class Shop implements Listener {
 
 	public List<String> getOwners(String... leadingExtras) {
 		List<String> result = new ArrayList<String>();
-		for (String s : leadingExtras) {
-			result.add(s);
-		}
+		result.addAll(Arrays.asList(leadingExtras));
 		for (ShopPlayer p : players.values()) {
 			result.add(p.name);
 		}
@@ -300,7 +292,6 @@ public class Shop implements Listener {
 			this.id = id;
 		}
 
-		@Override
 		public int compareTo(ShopEntry entry) {
 			return id - entry.id;
 		}

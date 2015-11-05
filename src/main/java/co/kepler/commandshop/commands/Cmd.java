@@ -20,12 +20,10 @@ import com.google.common.collect.ImmutableList;
  */
 public abstract class Cmd implements CommandExecutor, TabCompleter {
 	protected static final List<String> EMPTY_LIST = ImmutableList.of();
-	
-	@Override
+
 	public abstract boolean onCommand(CommandSender sender,
 			Command command, String label, String[] args);
-	
-	@Override
+
 	public abstract List<String> onTabComplete(CommandSender sender,
 			Command command, String label, String[] args);
 	

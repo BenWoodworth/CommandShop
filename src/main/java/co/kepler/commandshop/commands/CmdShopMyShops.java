@@ -113,7 +113,7 @@ public class CmdShopMyShops extends Cmd {
 				String itemArg = args[2];
 				item = Util.parseMaterial(itemArg);
 				if (item == null) {
-					sender.sendMessage("Invalid item: " + item);
+					sender.sendMessage("Invalid item: " + itemArg);
 					return true;
 				}
 				newShop = shop.createShop((Player) sender, item, data, dataTag);

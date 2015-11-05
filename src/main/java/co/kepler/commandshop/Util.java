@@ -17,24 +17,27 @@ public class Util {
 		try {
 			Integer.parseInt(s);
 			return true;
-		} catch (NumberFormatException e) {}
-		return false;
+		} catch (NumberFormatException e) {
+			return false;
+		}
 	}
 
 	public static boolean isDouble(String s) {
 		try {
 			Double.parseDouble(s);
 			return true;
-		} catch (NumberFormatException e) {}
-		return false;
+		} catch (NumberFormatException e) {
+			return false;
+		}
 	}
 
 	public static boolean isShort(String s) {
 		try {
 			Short.parseShort(s);
 			return true;
-		} catch (NumberFormatException e) {}
-		return false;
+		} catch (NumberFormatException e) {
+			return false;
+		}
 	}
 	
 	private static DecimalFormat decimalFormat = new DecimalFormat("$0.00");
